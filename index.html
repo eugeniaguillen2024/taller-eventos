@@ -9,11 +9,12 @@
 <body>
 
 <div id="miDiv" style="background-color: green; padding: 5px;">
-     <button onclick="mostrarAlerta()">Saludar</button>
+     <button onclick=mostrarAlerta();>Saludar</button>
 
 <script>
 function mostrarAlerta() {
   alert("Hola!");
+  event.stopPropagation();
 }
 </script>
 </div>
